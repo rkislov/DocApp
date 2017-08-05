@@ -1,15 +1,17 @@
 <% include partials/head %>
+
     <body>
         <div class="col-sm-8 col-sm-offset-2">
             <div class="text-center">
                 <h1 class="fa fa-user">Профиль пользователя</h1><br>
-                <span><strong>id пользователя</strong>: <%uiser._id ? user._id: ''%></span><br>
+                <span><strong>user id</strong>: <%= user._id ? user._id : '' %></span><br>
                 <span class="fa fa-sign-out"><a href="/">Выход</a></span>
                 <hr>
                 <div class="jumbotron">
-                    <% if (user.local.name != null { %>
-                        <strong>name</strong>: <% user.local.name %> <br>
-                    <%} %>
+             <% if (user.local.name != null) { %>
+            <strong>Пользователь</strong>: <%= user.local.name %><br>
+          <% } %>
+        </div>
             </div>
         </div>
 <% include partials/footer %>

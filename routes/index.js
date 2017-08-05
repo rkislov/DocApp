@@ -12,7 +12,7 @@ router.get('/login', function(req,res,next){
 });
 
 router.get('/signup', function(req,res,next){
-  res.render('signup.ejs', {message: req.flash('signupßMessage')});
+  res.render('signup.ejs', {message: req.flash('signupMessage')});
 });
 
 router.get('/profile', isLoggedIn, function(req,res,next){
