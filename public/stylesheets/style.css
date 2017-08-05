@@ -1,0 +1,12 @@
+body {
+  padding-top: 50px;
+}
+.fa-sing-out {
+  float: right;
+}
+footer{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
