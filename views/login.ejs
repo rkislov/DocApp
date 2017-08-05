@@ -1,12 +1,14 @@
-<% incluse partials/head %>
+<% include partials/head %>
+
 <body>
   <div class="col-sm-8 col-sm-offset-2">
+   <div class="jumbotron text-center">
     <h1><span class="fa fa-sign-in"></span>Вход</h1>
     <% if (message !=null) { %>
-      <div class="alert-danger"><%= message%> </div>
+      <div class="alert-danger"><%= message %> </div>
     <% } %>
 
-    <form class="" action="/login" method="post">
+    <form action="/login" method="post">
       <div class="form-group">
         <label>Имя пользователя</label>
         <input type="text" class="form-control" name="name" value="">
@@ -16,12 +18,13 @@
         <input type="password" class="form-control" name="password" value="" />
       </div>
       <div>
-          <input type="submit" class="form-control" value="Submit" />
+          <input type="submit" class="form-control" value="Вход" />
       </div>
     </form>
   </div>
   <hr>
   <span class="fa fa-sign-in">Нет аккаунта?<a href="/signup"></a></span>
   <p>Или на <a href="/">Главную</a> страницу</p>
-
-<% incluse partials/footer %>
+</div>
+</div>
+<% include partials/footer %>

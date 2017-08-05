@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var bcrypt = require('bcrypt-nodejs');
 
-var userShema = mongoose.Shema({
+var userShema = mongoose.Schema({
   local: {
     name: {type:String, required: true},
     password: String
